@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Lengkap - Kacirebonan</title>
+    <meta name="description"
+        content="Jelajahi koleksi visual mendalam dari warisan budaya Cirebon dalam galeri lengkap Kacirebonan">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav class="main-navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <h2 class="brand-text">KACIREBONAN</h2>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="culture-topics.html" class="nav-link">Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Potret Keindahan Tak Terhingga</h1>
+                    <p class="hero-subtitle">Jelajahi Koleksi Visual Mendalam dari Warisan Budaya Cirebon</p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/img/galeri/cirebon_galeri_1.svg" alt="Galeri Budaya Cirebon" class="hero-img">
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Introduction -->
+    <section class="gallery-introduction">
+        <div class="introduction-container">
+            <h2 class="section-title">Dunia Visual Cirebon dalam Satu Bingkai</h2>
+            <div class="introduction-content">
+                <p class="introduction-text">
+                    Selamat datang di arsip visual yang komprehensif, tempat setiap gambar menceritakan kisah unik
+                    tentang kekayaan budaya Cirebon.
+                    Dari kemegahan arsitektur istana hingga detail rumit motif batik, dari gerakan anggun tari topeng
+                    hingga kelezatan kuliner tradisional—
+                    setiap frame mengundang Anda untuk menyelami kedalaman warisan yang hidup.
+                </p>
+                <p class="introduction-text">
+                    Klik pada setiap gambar untuk menjelajahi detail lebih lanjut dan merasakan pengalaman visual yang
+                    mendalam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="gallery-filter">
+        <div class="filter-container">
+            <h2 class="section-title">Filter Berdasarkan Kategori</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="keraton">Keraton & Arsitektur</button>
+                <button class="filter-btn" data-filter="batik">Seni Batik</button>
+                <button class="filter-btn" data-filter="tari">Tari & Seni Pertunjukan</button>
+                <button class="filter-btn" data-filter="kuliner">Kuliner</button>
+                <button class="filter-btn" data-filter="alam">Alam & Pemandangan</button>
+                <button class="filter-btn" data-filter="tradisi">Tradisi & Upacara</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="gallery-container">
+            <h2 class="section-title">Koleksi Gambar Cirebon</h2>
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Keraton & Arsitektur -->
+                <div class="gallery-item" data-category="keraton">
+                    <img src="assets/img/galeri/cirebon_galeri_1.svg" alt="Keraton Kasepuhan Cirebon"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Keraton Kasepuhan</h3>
+                        <p class="gallery-description">Kemegahan arsitektur istana bersejarah</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="keraton">
+                    <img src="assets/img/galeri/cirebon_galeri_2.svg" alt="Gerbang Keraton Cirebon"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Gerbang Keraton</h3>
+                        <p class="gallery-description">Portal masuk ke istana bersejarah</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="keraton">
+                    <img src="assets/img/galeri/cirebon_galeri_3.svg" alt="Ruang Dalam Keraton"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Ruang Dalam Keraton</h3>
+                        <p class="gallery-description">Interior megah dengan ornamen khas</p>
+                    </div>
+                </div>
+
+                <!-- Seni Batik -->
+                <div class="gallery-item" data-category="batik">
+                    <img src="assets/img/galeri/cirebon_galeri_4.svg" alt="Motif Batik Mega Mendung"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Batik Mega Mendung</h3>
+                        <p class="gallery-description">Motif ikonik awan bergradasi</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="batik">
+                    <img src="assets/img/galeri/cirebon_galeri_5.svg" alt="Proses Membatik"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Proses Membatik</h3>
+                        <p class="gallery-description">Keahlian tangan dalam mencanting</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="batik">
+                    <img src="assets/img/galeri/cirebon_galeri_6.svg" alt="Koleksi Batik Cirebon"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Koleksi Batik</h3>
+                        <p class="gallery-description">Ragam motif tradisional Cirebon</p>
+                    </div>
+                </div>
+
+                <!-- Tari & Seni Pertunjukan -->
+                <div class="gallery-item" data-category="tari">
+                    <img src="assets/img/galeri/cirebon_galeri_7.svg" alt="Tari Topeng Cirebon"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Tari Topeng</h3>
+                        <p class="gallery-description">Gerakan anggun penuh makna</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tari">
+                    <img src="assets/img/galeri/cirebon_galeri_8.svg" alt="Topeng Tradisional"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Topeng Tradisional</h3>
+                        <p class="gallery-description">Wajah karakter dalam seni topeng</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tari">
+                    <img src="assets/img/galeri/cirebon_galeri_9.svg" alt="Pertunjukan Wayang"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Pertunjukan Wayang</h3>
+                        <p class="gallery-description">Seni pertunjukan bayangan tradisional</p>
+                    </div>
+                </div>
+
+                <!-- Kuliner -->
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="assets/img/galeri/cirebon_galeri_1.svg" alt="Empal Gentong Cirebon"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Empal Gentong</h3>
+                        <p class="gallery-description">Kuliner khas dalam gentong tanah</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="assets/img/galeri/cirebon_galeri_2.svg" alt="Nasi Jamblang"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Nasi Jamblang</h3>
+                        <p class="gallery-description">Hidangan nasi dengan daun jati</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="kuliner">
+                    <img src="assets/img/galeri/cirebon_galeri_3.svg" alt="Tahu Gejrot"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Tahu Gejrot</h3>
+                        <p class="gallery-description">Camilan segar dengan kuah asam pedas</p>
+                    </div>
+                </div>
+
+                <!-- Alam & Pemandangan -->
+                <div class="gallery-item" data-category="alam">
+                    <img src="assets/img/galeri/cirebon_galeri_4.svg" alt="Pantai Kejawanan"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Pantai Kejawanan</h3>
+                        <p class="gallery-description">Pesona pantai utara Cirebon</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="alam">
+                    <img src="assets/img/galeri/cirebon_galeri_5.svg" alt="Gunung Ceremai"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Gunung Ceremai</h3>
+                        <p class="gallery-description">Puncak tertinggi Jawa Barat</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="alam">
+                    <img src="assets/img/galeri/cirebon_galeri_6.svg" alt="Sawah Tradisional"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Sawah Tradisional</h3>
+                        <p class="gallery-description">Hamparan hijau persawahan</p>
+                    </div>
+                </div>
+
+                <!-- Tradisi & Upacara -->
+                <div class="gallery-item" data-category="tradisi">
+                    <img src="assets/img/galeri/cirebon_galeri_7.svg" alt="Upacara Adat"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Upacara Adat</h3>
+                        <p class="gallery-description">Ritual tradisional keraton</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tradisi">
+                    <img src="assets/img/galeri/cirebon_galeri_8.svg" alt="Festival Budaya"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Festival Budaya</h3>
+                        <p class="gallery-description">Perayaan warisan leluhur</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tradisi">
+                    <img src="assets/img/galeri/cirebon_galeri_9.svg" alt="Pakaian Adat"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Pakaian Adat</h3>
+                        <p class="gallery-description">Busana tradisional Cirebon</p>
+                    </div>
+                </div>
+
+                <!-- Additional mixed category items -->
+                <div class="gallery-item" data-category="keraton">
+                    <img src="assets/img/galeri/cirebon_galeri_1.svg" alt="Ornamen Keraton"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Ornamen Keraton</h3>
+                        <p class="gallery-description">Detail ukiran dan hiasan istana</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="batik">
+                    <img src="assets/img/galeri/cirebon_galeri_2.svg" alt="Workshop Batik"
+                        class="gallery-image lightbox-trigger">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Workshop Batik</h3>
+                        <p class="gallery-description">Proses pembelajaran membatik</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="gallery-cta">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h3 class="cta-title">Dukung Pelestarian Warisan Visual Kami!</h3>
+                <p class="cta-description">
+                    Bergabunglah dalam misi pelestarian budaya Cirebon. Bagikan foto, cerita, dan kenangan Anda
+                    untuk memperkaya koleksi visual warisan budaya yang tak ternilai ini.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn primary">Bagikan Foto Anda</a>
+                    <a href="culture-topics.html" class="cta-btn secondary">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <h3 class="footer-logo-text">KACIREBONAN</h3>
+                    </div>
+                    <p class="footer-tagline">Menjelajahi dan Melestarikan Jejak Budaya Cirebon</p>
+                    <div class="footer-contact">
+                        <p class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            info@kacirebonan.com
+                        </p>
+                        <p class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            +62 231 123456
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Navigasi Cepat</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html" class="footer-link">Beranda</a></li>
+                        <li><a href="about.html" class="footer-link">Tentang Kami</a></li>
+                        <li><a href="culture-topics.html" class="footer-link">Budaya</a></li>
+                        <li><a href="about.html" class="footer-link">Sejarah</a></li>
+                        <li><a href="gallery.html" class="footer-link">Galeri</a></li>
+                        <li><a href="contact.html" class="footer-link">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="footer-social">
+                    <h4 class="footer-heading">Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer-newsletter">
+                        Berlangganan newsletter kami untuk update terbaru tentang budaya Cirebon.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2025 Kacirebonan. Semua Hak Dilindungi.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="bottom-link">Kebijakan Privasi</a>
+                        <a href="#" class="bottom-link">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Image Lightbox" aria-hidden="true">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" class="lightbox-image" src="" alt="">
+                <div class="lightbox-caption"></div>
+            </div>
+            <div class="lightbox-navigation">
+                <button class="lightbox-prev" aria-label="Previous image">‹</button>
+                <button class="lightbox-next" aria-label="Next image">›</button>
+                <div class="lightbox-counter">
+                    <span class="lightbox-current">1</span> / <span class="lightbox-total">20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

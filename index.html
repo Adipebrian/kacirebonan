@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacirebonan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Background Pattern Layer -->
+        <div class="pattern-layer"></div>
+
+        <!-- Content Layer -->
+        <div class="content">
+            <div class="text-container">
+                <svg id="textHover" class="text-hover-svg" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="textGradient" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#eab308" />
+                            <stop offset="25%" stop-color="#ef4444" />
+                            <stop offset="50%" stop-color="#3b82f6" />
+                            <stop offset="75%" stop-color="#06b6d4" />
+                            <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+
+                        <radialGradient id="revealMask" gradientUnits="userSpaceOnUse" r="20%" cx="50%" cy="50%">
+                            <stop offset="0%" stop-color="white" />
+                            <stop offset="100%" stop-color="black" />
+                        </radialGradient>
+
+                        <mask id="textMask">
+                            <rect x="0" y="0" width="100%" height="100%" fill="url(#revealMask)" />
+                        </mask>
+                    </defs>
+
+                    <!-- Background stroke text (visible on hover) -->
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                        class="background-text">KACIREBONAN</text>
+
+                    <!-- Animated stroke text (draws on load) -->
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+                        class="animated-text">KACIREBONAN</text>
+
+                    <!-- Gradient masked text (follows cursor) -->
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="gradient-text"
+                        mask="url(#textMask)">KACIREBONAN</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Culture Cards Section -->
+    <section class="culture-section">
+        <div class="culture-container">
+            <!-- Section Header -->
+            <div class="culture-header">
+                <h2 class="culture-title">Gerbang Eksplorasi Budaya Cirebon</h2>
+                <div class="culture-introduction">
+                    <p class="culture-paragraph">
+                        Cirebon bukan sekadar kota pesisir di Jawa Barat, melainkan permata budaya yang memancarkan
+                        keunikan dari perpaduan harmonis tradisi Jawa, Islam, dan Tionghoa. Setiap sudut kota ini
+                        menyimpan cerita yang telah dirajut selama berabad-abad, menciptakan mozaik budaya yang tak
+                        tertandingi di Nusantara.
+                    </p>
+                    <p class="culture-paragraph">
+                        Dari kemegahan istana-istana bersejarah hingga kelezatan kuliner yang menggugah selera,
+                        dari gerakan anggun tari topeng hingga motif batik yang sarat makna—Cirebon mengundang
+                        setiap jiwa untuk menyelami kekayaan warisan yang hidup dan berkembang hingga kini.
+                    </p>
+                </div>
+                <p class="culture-transition">Mari memulai perjalanan melalui tiga pilar utama warisan budaya Cirebon
+                </p>
+            </div>
+
+            <!-- Culture Cards Grid -->
+            <div class="culture-grid">
+                <!-- Keraton Card -->
+                <a href="culture-topics.html" class="culture-card" data-category="heritage">
+                    <div class="card-image">
+                        <img src="assets/img/culture/keraton.png" alt="Keraton Cirebon" class="card-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Keraton Cirebon</h3>
+                        <p class="card-description">Istana bersejarah yang menjadi pusat kebudayaan dan
+                            spiritual, mewarisi arsitektur megah perpaduan Jawa-Islam</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                </a>
+
+                <!-- Kuliner Card -->
+                <a href="kuliner-cirebon.html" class="culture-card" data-category="culinary">
+                    <div class="card-image">
+                        <img src="assets/img/culture/kuliner.png" alt="Kuliner Khas Cirebon" class="card-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Kuliner Khas</h3>
+                        <p class="card-description">Empal gentong, nasi jamblang, dan beragam kelezatan
+                            kuliner yang mencerminkan perpaduan rasa dan tradisi turun-temurun</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                </a>
+
+                <!-- Topeng Card -->
+                <a href="tari-seni-pertunjukan.html" class="culture-card" data-category="dance">
+                    <div class="card-image">
+                        <img src="assets/img/culture/topeng.png" alt="Tari Topeng Cirebon" class="card-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tari Topeng Cirebon</h3>
+                        <p class="card-description">Seni tari tradisional yang menceritakan kisah epik
+                            dengan gerakan yang penuh makna dan topeng yang ekspresif</p>
+                        <div class="card-arrow">→</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <h2 class="timeline-title">Perjalanan Waktu Cirebon</h2>
+                <p class="timeline-subtitle">Linimasa Singkat Sejarah yang Membentuk Budaya</p>
+            </div>
+
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+
+                <!-- Timeline Item 1: Era Pajajaran -->
+                <div class="timeline-item" data-year="~1400">
+                    <div class="timeline-content timeline-left">
+                        <div class="timeline-card">
+                            <div class="timeline-year">~1400</div>
+                            <h3 class="timeline-event-title">Era Kerajaan Pajajaran</h3>
+                            <p class="timeline-description">
+                                Wilayah Cirebon menjadi bagian dari Kerajaan Pajajaran yang berpusat di Bogor.
+                                Masa ini menjadi fondasi awal peradaban di pesisir utara Jawa Barat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <!-- Timeline Item 2: Kesultanan Cirebon -->
+                <div class="timeline-item" data-year="1479">
+                    <div class="timeline-content timeline-right">
+                        <div class="timeline-card">
+                            <div class="timeline-year">1479</div>
+                            <h3 class="timeline-event-title">Berdirinya Kesultanan Cirebon</h3>
+                            <p class="timeline-description">
+                                Sunan Gunung Jati mendirikan Kesultanan Cirebon. Era keemasan dimulai dengan
+                                perpaduan budaya Jawa, Islam, dan Tionghoa yang membentuk identitas unik Cirebon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <!-- Timeline Item 3: Era Kolonial -->
+                <div class="timeline-item" data-year="1600">
+                    <div class="timeline-content timeline-left">
+                        <div class="timeline-card">
+                            <div class="timeline-year">1600-an</div>
+                            <h3 class="timeline-event-title">Masa Kolonial Belanda</h3>
+                            <p class="timeline-description">
+                                VOC mulai menguasai perdagangan di Cirebon. Meski dalam tekanan kolonial,
+                                tradisi dan budaya lokal tetap terjaga melalui keraton dan masyarakat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <!-- Timeline Item 4: Era Kemerdekaan -->
+                <div class="timeline-item" data-year="1945">
+                    <div class="timeline-content timeline-right">
+                        <div class="timeline-card">
+                            <div class="timeline-year">1945</div>
+                            <h3 class="timeline-event-title">Era Kemerdekaan</h3>
+                            <p class="timeline-description">
+                                Indonesia merdeka dan Cirebon menjadi bagian integral Republik Indonesia.
+                                Budaya tradisional mulai dilestarikan secara resmi sebagai warisan nasional.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <!-- Timeline Item 5: Cirebon Modern -->
+                <div class="timeline-item" data-year="2000">
+                    <div class="timeline-content timeline-left">
+                        <div class="timeline-card">
+                            <div class="timeline-year">2000-an</div>
+                            <h3 class="timeline-event-title">Cirebon Modern</h3>
+                            <p class="timeline-description">
+                                Era digitalisasi dan globalisasi. Cirebon memadukan tradisi dengan modernitas,
+                                melestarikan budaya sambil mengembangkan pariwisata dan ekonomi kreatif.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Visual Section -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Galeri Visual Cirebon</h2>
+                <p class="gallery-subtitle">Potret Keindahan & Kehidupan</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_1.svg" alt="Keraton Kasepuhan - Arsitektur Megah Cirebon"
+                        class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_2.svg" alt="Batik Motif Khas Cirebon"
+                        class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_3.svg"
+                        alt="Tari Topeng Cirebon - Seni Budaya Tradisional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_4.svg" alt="Kuliner Khas Cirebon" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_5.svg" alt="Sunyaragi" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_6.svg" alt="Pantai Kejawanan - Keindahan Pesisir Cirebon"
+                        class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_7.svg"
+                        alt="Pasar Tradisional - Kehidupan Sehari-hari Masyarakat" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_8.svg" alt="Arsitektur" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="assets/img/galeri/cirebon_galeri_9.svg" alt="Festival Budaya - Perayaan Tradisi Cirebon"
+                        class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-zoom-icon">🔍</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <a href="gallery.html" class="gallery-button">Lihat Galeri Lengkap</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Jelajahi Lebih Dalam Dunia Kacirebonan</h2>
+                <p class="cta-description">
+                    Setelah perjalanan visual dan sejarah ini, kami mengundang Anda untuk terus menggali kekayaan
+                    Cirebon.
+                    Temukan cerita di balik setiap artefak, atau berinteraksi langsung dengan kami untuk informasi lebih
+                    lanjut.
+                </p>
+                <div class="cta-buttons">
+                    <a href="culture-topics.html" class="cta-button cta-primary">Jelajahi Semua Konten</a>
+                    <a href="contact.html" class="cta-button cta-secondary">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <h3 class="footer-logo-text">KACIREBONAN</h3>
+                    </div>
+                    <p class="footer-tagline">Menjelajahi dan Melestarikan Jejak Budaya Cirebon</p>
+                    <div class="footer-contact">
+                        <p class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            info@kacirebonan.com
+                        </p>
+                        <p class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            +62 231 123456
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Navigasi Cepat</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html" class="footer-link">Beranda</a></li>
+                        <li><a href="about.html" class="footer-link">Tentang Kami</a></li>
+                        <li><a href="culture-topics.html" class="footer-link">Budaya</a></li>
+                        <li><a href="gallery.html" class="footer-link">Galeri</a></li>
+                        <li><a href="contact.html" class="footer-link">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="footer-social">
+                    <h4 class="footer-heading">Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer-newsletter">
+                        Berlangganan newsletter kami untuk update terbaru tentang budaya Cirebon.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2025 Kacirebonan. Semua Hak Dilindungi.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="bottom-link">Kebijakan Privasi</a>
+                        <a href="#" class="bottom-link">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Image Lightbox" aria-hidden="true">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" class="lightbox-image" src="" alt="">
+                <div class="lightbox-caption"></div>
+            </div>
+            <div class="lightbox-navigation">
+                <button class="lightbox-prev" aria-label="Previous image">‹</button>
+                <button class="lightbox-next" aria-label="Next image">›</button>
+                <div class="lightbox-counter">
+                    <span class="lightbox-current">1</span> / <span class="lightbox-total">9</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

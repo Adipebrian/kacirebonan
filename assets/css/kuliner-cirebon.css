@@ -1,0 +1,1053 @@
+/* ===== KULINER CIREBON SPECIFIC STYLES ===== */
+
+/* Hero Section */
+.kuliner-hero {
+  padding: 120px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.kuliner-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.kuliner-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #60a5fa, #34d399, #f59e0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+.hero-image {
+  position: relative;
+  animation: fadeInRight 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Introduction Section */
+/* Tari Introduction Section */
+.kuliner-introduction {
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  color: #333333;
+}
+
+.introduction-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.introduction-content {
+  margin-top: 40px;
+}
+
+.intro-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #444444;
+  text-align: justify;
+}
+
+.intro-paragraph strong {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Tari History Section */
+.kuliner-history {
+  padding: 100px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(15, 15, 25, 0.95) 50%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
+  position: relative;
+}
+
+.kuliner-history::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  opacity: 0.03;
+  z-index: 1;
+}
+
+.history-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 60px;
+}
+
+.history-section,
+.philosophy-section {
+  margin-bottom: 40px;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #60a5fa;
+  margin-bottom: 20px;
+  border-left: 4px solid #60a5fa;
+  padding-left: 15px;
+}
+
+.history-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.history-paragraph strong {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.history-image {
+  text-align: center;
+  position: sticky;
+  top: 100px;
+}
+
+.history-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-caption {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #fbbf24, #10b981, #fbbf24);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: auto;
+  margin-left: 0;
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: #fbbf24;
+  border: 4px solid #1e293b;
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
+}
+
+.timeline-content {
+  flex: 1;
+  max-width: 45%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-year {
+  color: #fbbf24;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.timeline-text {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* Featured Dishes Section */
+.featured-dishes {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.featured-dishes .dishes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.featured-dishes .dishes-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.featured-dishes .dishes-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.featured-dishes .dishes-subtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.featured-dishes .dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.featured-dishes .dish-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.featured-dishes .dish-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.featured-dishes .dish-card.featured {
+  border: 2px solid #fbbf24;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.featured-dishes .dish-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.featured-dishes .dish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-dishes .dish-card:hover .dish-image {
+  transform: scale(1.1);
+}
+
+.featured-dishes .dish-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fbbf24;
+  color: #1e293b;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-dishes .dish-content {
+  padding: 2rem;
+}
+
+.featured-dishes .dish-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.featured-dishes .dish-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.featured-dishes .stars {
+  color: #fbbf24;
+  font-size: 1.1rem;
+}
+
+.featured-dishes .rating-text {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.featured-dishes .dish-origin {
+  color: #fbbf24;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.featured-dishes .dish-description {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.featured-dishes .dish-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.featured-dishes .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.featured-dishes .detail-icon {
+  font-size: 1rem;
+}
+
+.featured-dishes .detail-text {
+  white-space: nowrap;
+}
+
+/* Drinks & Snacks Section */
+.drinks-snacks {
+  padding: 6rem 0;
+  background: #f8fafc;
+  position: relative;
+}
+
+.drinks-snacks::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  opacity: 0.03;
+  z-index: 1;
+}
+
+.drinks-snacks .drinks-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.drinks-snacks .section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.drinks-snacks .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.drinks-snacks .section-subtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.drinks-snacks .drinks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.drinks-snacks .drink-item {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.drinks-snacks .drink-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.drinks-snacks .drink-image {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.drinks-snacks .drink-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.drinks-snacks .drink-item:hover .drink-img {
+  transform: scale(1.1);
+}
+
+.drinks-snacks .drink-content {
+  padding: 2rem;
+}
+
+.drinks-snacks .drink-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.drinks-snacks .drink-description {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Philosophy Section */
+.kuliner-philosophy {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.kuliner-philosophy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  opacity: 0.02;
+  z-index: 1;
+}
+
+.kuliner-philosophy .philosophy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.kuliner-philosophy .philosophy-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.kuliner-philosophy .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #fbbf24, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.kuliner-philosophy .philosophy-story {
+  margin-top: 1rem;
+}
+
+.kuliner-philosophy .philosophy-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.kuliner-philosophy .philosophy-paragraph strong {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.kuliner-philosophy .philosophy-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kuliner-philosophy .philosophy-icon {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.kuliner-philosophy .icon-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(251, 191, 36, 0.1);
+  border-radius: 50%;
+  border: 2px solid #fbbf24;
+}
+
+.kuliner-philosophy .philosophy-svg {
+  width: 80px;
+  height: 80px;
+}
+
+.kuliner-philosophy .philosophy-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 0.5rem;
+}
+
+.kuliner-philosophy .philosophy-desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Culinary Gallery */
+.culinary-gallery {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+}
+
+.culinary-gallery .gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.culinary-gallery .section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.culinary-gallery .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fbbf24, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.culinary-gallery .section-subtitle {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.culinary-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.culinary-gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  aspect-ratio: 4/3;
+}
+
+.culinary-gallery .gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.culinary-gallery .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.culinary-gallery .gallery-item:hover .gallery-img {
+  transform: scale(1.1);
+}
+
+.culinary-gallery .gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.culinary-gallery .gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.culinary-gallery .gallery-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.culinary-gallery .gallery-desc {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Call to Action Section */
+.culinary-cta {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.culinary-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 50%
+    );
+  background-size: 300px 300px;
+}
+
+.culinary-cta .cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.culinary-cta .cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.culinary-cta .cta-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.culinary-cta .cta-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+}
+
+.culinary-cta .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.culinary-cta .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+
+.culinary-cta .cta-btn.primary {
+  background: white;
+  color: #1e293b;
+  border-color: white;
+}
+
+.culinary-cta .cta-btn.primary:hover {
+  background: #1e293b;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.culinary-cta .cta-btn.secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.culinary-cta .cta-btn.secondary:hover {
+  background: white;
+  color: #1e293b;
+  transform: translateY(-2px);
+}
+
+.kuliner-cta .button-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.kuliner-cta .cta-visual {
+  position: relative;
+}
+
+.kuliner-cta .cta-image-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.kuliner-cta .cta-image-container:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.kuliner-cta .cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.kuliner-cta .cta-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(30, 41, 59, 0.9);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(10px);
+}
+
+.kuliner-cta .badge-icon {
+  font-size: 1.5rem;
+}
+
+.kuliner-cta .badge-text {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .featured-dishes .dishes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .kuliner-hero-container {
+    gap: 40px;
+  }
+
+  .history-content {
+    gap: 40px;
+  }
+
+  /* Drinks & Snacks Tablet */
+  .drinks-snacks .drinks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Philosophy Tablet */
+  .kuliner-philosophy .philosophy-content {
+    gap: 3rem;
+  }
+
+  /* Gallery Tablet */
+  .culinary-gallery .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .kuliner-hero .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .kuliner-hero .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .kuliner-hero .hero-stats {
+    justify-content: center;
+  }
+
+  .kuliner-intro .intro-content,
+  .kuliner-cta .cta-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .kuliner-intro .visual-grid {
+    height: 300px;
+  }
+
+  .timeline::before {
+    left: 2rem;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 4rem;
+    margin-right: 0;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    max-width: none;
+  }
+
+  .timeline-marker {
+    left: 2rem;
+  }
+
+  .featured-dishes .dishes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .featured-dishes .dish-card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  /* Drinks & Snacks Responsive */
+  .drinks-snacks .drinks-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .drinks-snacks .drink-item {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Philosophy Responsive */
+  .kuliner-philosophy .philosophy-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .kuliner-philosophy .philosophy-story {
+    text-align: left;
+  }
+
+  /* Gallery Responsive */
+  .culinary-gallery .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  /* CTA Responsive */
+  .culinary-cta .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .culinary-cta .cta-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .kuliner-hero .hero-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .kuliner-intro .highlight-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-dishes .dishes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-dishes .dish-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .culinary-gallery .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+  }
+
+  .culinary-gallery .gallery-item.large,
+  .culinary-gallery .gallery-item.wide,
+  .culinary-gallery .gallery-item:not(.large):not(.wide) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

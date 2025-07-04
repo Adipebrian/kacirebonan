@@ -1,0 +1,707 @@
+/* 
+ * Batik Cirebon
+ * File: assets/css/batik.css
+ * Styling khusus untuk halaman Kontak Kami
+ */
+.batik-hero {
+  padding: 120px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.batik-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.batik-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa, #34d399);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.hero-image {
+  position: relative;
+  animation: fadeInRight 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Batik Introduction Section */
+.batik-introduction {
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  color: #333333;
+}
+
+.introduction-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.introduction-content {
+  margin-top: 40px;
+}
+
+.intro-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #444444;
+  text-align: justify;
+}
+
+.intro-paragraph strong {
+  color: #d97706;
+  font-weight: 600;
+}
+
+/* Batik History Section */
+.batik-history {
+  padding: 100px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(15, 15, 25, 0.95) 50%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
+  position: relative;
+}
+
+.batik-history::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  opacity: 0.03;
+  z-index: 1;
+}
+
+.history-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.history-story {
+  margin-top: 30px;
+}
+
+.history-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.history-image {
+  text-align: center;
+}
+
+.history-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-caption {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Batik Motifs Section */
+.batik-motifs {
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  color: #333333;
+}
+
+.motifs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.motifs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.motif-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.motif-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.motif-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.motif-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.motif-card:hover .motif-img {
+  transform: scale(1.05);
+}
+
+.motif-content {
+  padding: 30px;
+}
+
+.motif-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.motif-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555555;
+  text-align: justify;
+}
+
+/* Batik Process Section */
+.batik-process {
+  padding: 100px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(15, 15, 25, 0.95) 50%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
+  position: relative;
+}
+
+.batik-process::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/pattern.png");
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  opacity: 0.03;
+  z-index: 1;
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.process-steps {
+  margin-top: 80px;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+
+.process-step.reverse .step-content {
+  direction: rtl;
+}
+
+.process-step.reverse .step-text {
+  direction: ltr;
+  text-align: right;
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #60a5fa, #34d399);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: sticky;
+  top: 100px;
+}
+
+.step-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.step-image {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.step-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.step-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.step-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: justify;
+}
+
+/* Batik Gallery Section */
+.batik-gallery {
+  padding: 100px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  color: #333333;
+}
+
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  aspect-ratio: 4/3;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: #ffffff;
+  padding: 30px 20px 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.gallery-desc {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Batik CTA Section */
+.batik-cta {
+  padding: 80px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(96, 165, 250, 0.1) 0%,
+    rgba(52, 211, 153, 0.1) 50%,
+    rgba(245, 158, 11, 0.1) 100%
+  );
+  backdrop-filter: blur(20px);
+  color: #333333;
+}
+
+.cta-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  color: #ffffff;
+}
+
+.cta-btn.primary:hover {
+  background: linear-gradient(135deg, #b45309, #d97706);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(217, 119, 6, 0.3);
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: #d97706;
+  border-color: #d97706;
+}
+
+.cta-btn.secondary:hover {
+  background: #d97706;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(217, 119, 6, 0.3);
+}
+
+/* Dark sections text styling */
+.batik-hero .section-title,
+.batik-history .section-title,
+.batik-process .section-title {
+  background: linear-gradient(135deg, #ffffff, #60a5fa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.batik-hero .section-subtitle,
+.batik-history .section-subtitle,
+.batik-process .section-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light sections text styling */
+.batik-introduction .section-title,
+.batik-motifs .section-title,
+.batik-gallery .section-title {
+  background: linear-gradient(135deg, #1a1a1a, #d97706);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.batik-introduction .section-subtitle,
+.batik-motifs .section-subtitle,
+.batik-gallery .section-subtitle {
+  color: #666666;
+}
+
+/* Responsive Design for Batik Page */
+@media (max-width: 968px) {
+  .batik-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .history-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .motifs-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .process-step {
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .step-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .process-step.reverse .step-content {
+    direction: ltr;
+  }
+
+  .process-step.reverse .step-text {
+    direction: ltr;
+    text-align: left;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn {
+    width: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .batik-hero,
+  .batik-introduction,
+  .batik-history,
+  .batik-motifs,
+  .batik-process,
+  .batik-gallery {
+    padding: 60px 0;
+  }
+
+  .breadcrumbs-list {
+    font-size: 0.8rem;
+  }
+
+  .breadcrumb-separator {
+    margin: 0 8px;
+  }
+
+  .hero-title,
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .motif-card {
+    margin-bottom: 20px;
+  }
+
+  .motif-content {
+    padding: 20px;
+  }
+
+  .process-step {
+    margin-bottom: 60px;
+  }
+
+  .step-img {
+    height: 200px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .batik-hero-container,
+  .introduction-container,
+  .history-container,
+  .motifs-container,
+  .process-container,
+  .gallery-container,
+  .cta-container {
+    padding: 0 15px;
+  }
+
+  .hero-title,
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .cta-title {
+    font-size: 1.8rem;
+  }
+
+  .process-step {
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
