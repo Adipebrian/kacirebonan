@@ -919,7 +919,8 @@ section {
   .nav-list {
     flex-direction: column;
     gap: 20px;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 20px;
   }
 
   .nav-toggle {

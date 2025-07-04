@@ -1,6 +1,3 @@
-/* =============================================
-   INDEX.CSS - GAYA SPESIFIK UNTUK HOMEPAGE
-   ============================================= */
 
 /* Homepage Hero Section Styles */
 .container {
@@ -863,18 +860,44 @@
 
 /* Responsive Design for Homepage */
 @media (max-width: 768px) {
+  .timeline-title {
+    font-size: 2.2rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 1rem;
+  }
+
   .timeline-line {
     left: 30px;
   }
 
   .timeline-content {
-    width: calc(100% - 80px);
-    left: 80px !important;
+    width: calc(100% - 60px);
+    margin-left: 60px !important;
+    margin-right: 0 !important;
     text-align: left !important;
   }
 
   .timeline-dot {
     left: 30px;
+  }
+
+  .timeline-left .timeline-card::after,
+  .timeline-right .timeline-card::after {
+    display: none;
+  }
+
+  .timeline-card {
+    padding: 25px;
+  }
+
+  .timeline-event-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
   }
 
   .culture-grid {
@@ -902,6 +925,25 @@
 }
 
 @media (max-width: 480px) {
+  .timeline-section {
+    padding: 60px 0;
+  }
+
+  .timeline-header {
+    margin-bottom: 50px;
+  }
+
+  .timeline-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
   .background-text,
   .animated-text,
   .gradient-text {

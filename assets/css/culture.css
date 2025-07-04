@@ -1,14 +1,4 @@
-/* ====================================
-   CULTURE PAGE STYLES
-   ==================================== */
 
-/* Breadcrumbs Section */
-
-/* =========================
-   CULTURE TOPICS PAGE STYLES
-   ========================= */
-
-/* Culture Hero Section */
 .culture-hero {
   padding: 120px 0 100px;
   position: relative;
@@ -569,4 +559,59 @@
 .batik-motifs .section-subtitle,
 .batik-gallery .section-subtitle {
   color: #666666;
+}
+
+@media (max-width: 768px) {
+  .culture-hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-img {
+    max-height: 300px;
+  }
+
+  .motifs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .culture-hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-img {
+    max-height: 300px;
+  }
+
+  .motifs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    grid-template-columns: 1fr;
+  }
 }
